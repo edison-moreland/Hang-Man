@@ -65,6 +65,7 @@ def play(player_name):
         print("Guessed Letters: {}".format(", ".join(guessed_letters)))
         guess = input("> ")
         man_state += check_guess(word, guess)
+        guessed_letters.append(guess)
 
 
 if __name__ == '__main__':
