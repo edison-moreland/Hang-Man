@@ -64,7 +64,7 @@ def play(player_name):
         display_board(man_state, word, guessed_letters)
         print("Guessed Letters: {}".format(", ".join(guessed_letters)))
         guess = input("> ")
-        man_state += check_guess(word, guess)
+        man_state += 1 if not check_guess(word, guess) else 0
         guessed_letters.append(guess)
 
 
